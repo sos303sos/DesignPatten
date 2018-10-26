@@ -16,7 +16,7 @@
  * 2018年10月22日       95129          3.0             1.0
  * modification
  */
-package designPattern.create.factory.good;
+package designPattern.create.factory;
 
 /**
   * class: AbstractHumanFactory<BR>

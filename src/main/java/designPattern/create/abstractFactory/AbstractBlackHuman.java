@@ -33,7 +33,7 @@ public abstract class AbstractBlackHuman implements Human {
       * description: TODO<BR>
       * author: 95129<BR>
       * overriding_date: 2018年10月22日 上午11:37:44<BR></p> BlackHuman
-      * @see designPattern.create.factory.good.Human#getColor()
+      * @see designPattern.create.factory.Human#getColor()
       */
     public void getColor() {
         System.out.println("黑人皮肤黑");
@@ -44,7 +44,7 @@ public abstract class AbstractBlackHuman implements Human {
       * description: TODO<BR>
       * author: 95129<BR>
       * overriding_date: 2018年10月22日 上午11:37:44<BR></p> BlackHuman
-      * @see designPattern.create.factory.good.Human#talk()
+      * @see designPattern.create.factory.Human#talk()
       */
     public void talk() {
         System.out.println("黑人会说话 一般人不懂");
