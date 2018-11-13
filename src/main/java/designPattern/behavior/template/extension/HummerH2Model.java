@@ -75,4 +75,16 @@ public class HummerH2Model extends HummerModel {
         System.out.println("悍马H2引擎是这样的声音");
     }
 
+    /**
+      *<p> 
+      * description: TODO<BR>
+      * author: 95129<BR>
+      * overriding_date: 2018年11月13日 下午7:43:44<BR></p>
+      * @return HummerH2Model
+      * @see designPattern.behavior.template.extension.HummerModel#isAlarm()
+      */
+    @Override
+    protected boolean isAlarm() {
+        return false;
+    }
 }
