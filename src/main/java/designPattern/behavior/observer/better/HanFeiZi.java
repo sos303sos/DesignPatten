@@ -28,7 +28,6 @@ import java.util.ArrayList;
   *
   */
 public class HanFeiZi implements IHanFeiZi, Observable {
-
     private ArrayList<Observer> observerList = new ArrayList<Observer>();
 
     //private ILiSi liSi = new LiSi();

@@ -25,7 +25,7 @@ package designPattern.behavior.mediatorPattern.good;
   * date: 2018年10月14日 上午11:08:25<BR>
   *
   */
-public class Stock  extends AbstractColleague{
+public class Stock extends AbstractColleague {
 
     /**
       * Create New Instance Stock<BR>
@@ -39,13 +39,13 @@ public class Stock  extends AbstractColleague{
     private static int COMPUTER_NUMBER = 100;
 
     public void increase(int number) {
-        COMPUTER_NUMBER+=number;
-        System.out.println("库存数量为:"+COMPUTER_NUMBER);
+        COMPUTER_NUMBER += number;
+        System.out.println("库存数量为:" + COMPUTER_NUMBER);
     }
 
     public void decrease(int number) {
-        COMPUTER_NUMBER-=number;
-        System.out.println("库存数量为:"+COMPUTER_NUMBER);
+        COMPUTER_NUMBER -= number;
+        System.out.println("库存数量为:" + COMPUTER_NUMBER);
     }
 
     public int getStockNumber() {
