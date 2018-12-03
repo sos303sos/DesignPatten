@@ -36,7 +36,7 @@ public class BlackHuman implements Human {
       * @see designPattern.create.factory.Human#getColor()
       */
     public void getColor() {
-        System.out.println("黑人皮肤黑");
+        System.out.println("黑人皮肤黑    ");
     }
 
     /**
