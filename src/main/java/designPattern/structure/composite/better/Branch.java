@@ -48,7 +48,7 @@ public class Branch extends Corp {
      *<p> 
      * description: TODO<BR>
      * author: 95129<BR>
-     * overriding_date: 2018年11月22日 下午8:06:59<BR></p>
+     * overriding_date:   2018年11月22日 下午8:06:59<BR></p>
      * @param corp IBranch
      * @see designPattern.structure.composite.good.IBranch#addSubordinate(designPattern.structure.composite.good.ICorp)
      */
