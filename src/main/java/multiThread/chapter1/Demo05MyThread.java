@@ -25,13 +25,13 @@ package multiThread.chapter1;
   * date: 2018年12月27日 上午10:01:29<BR>
   *
   */
-public class Demo5MyThread extends Thread {
+public class Demo05MyThread extends Thread {
 
     /**
       * Create New Instance Demo5MyThread<BR>
       * description: <BR>
       */
-    public Demo5MyThread() {
+    public Demo05MyThread() {
         System.out.println("构造方法打印" + Thread.currentThread().getName());
         System.out.println("this.getName():" + this.getName());
     }
@@ -60,7 +60,7 @@ public class Demo5MyThread extends Thread {
       * @param args  
       */
     public static void main(String[] args) {
-        Demo5MyThread thread = new Demo5MyThread();//主线程调用
+        Demo05MyThread thread = new Demo05MyThread();//主线程调用
         thread.start();//Thread-0线程调用
         //thread.run();
     }

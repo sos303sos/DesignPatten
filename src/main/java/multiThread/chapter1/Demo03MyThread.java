@@ -25,9 +25,22 @@ package multiThread.chapter1;
   * date: 2018年12月27日 上午9:41:10<BR>
   *
   */
-public class Demo4MyThread extends Thread {
+public class Demo03MyThread extends Thread {
 
     private int count = 5;
+
+    /**
+     *<p>
+      * method:  MyThread<BR>
+      * description:  TODO<BR>
+      * author:  95129<BR>
+      * date:  2018年12月27日 上午9:42:04<BR>
+      *   
+      */
+    private Demo03MyThread(String name) {
+        super();
+        this.setName(name);
+    }
 
     /**
       *<p> 
@@ -37,22 +50,21 @@ public class Demo4MyThread extends Thread {
       * @see java.lang.Thread#run()
       */
     @Override
-    public synchronized void run() {
+    public void run() {
         super.run();
-        count--;
-        System.out.println("由" + this.currentThread().getName() + "计算,count=" + count);
+        while (count > 0) {
+            count--;
+            System.out.println("由" + this.currentThread().getName() + "计算,count=" + count);
+        }
     }
 
     public static void main(String[] args) {
-        Demo4MyThread myThread = new Demo4MyThread();
-        Thread a = new Thread(myThread, "A");
-        Thread b = new Thread(myThread, "B");
-        Thread c = new Thread(myThread, "C");
-        Thread d = new Thread(myThread, "D");
+        Demo03MyThread a = new Demo03MyThread("A");
         a.start();
+        Demo03MyThread b = new Demo03MyThread("B");
         b.start();
+        Demo03MyThread c = new Demo03MyThread("C");
         c.start();
-        d.start();
     }
 
 }

@@ -25,13 +25,13 @@ package multiThread.chapter1;
   * date: 2018年12月27日 上午10:06:35<BR>
   *
   */
-public class Demo6CountOperate extends Thread {
+public class Demo06CountOperate extends Thread {
 
     /**
       * Create New Instance Demo6CountOperate<BR>
       * description: <BR>
       */
-    public Demo6CountOperate() {
+    public Demo06CountOperate() {
         System.out.println("begin");
         System.out.println("Thread.currentThread().getName():" + Thread.currentThread().getName());
         System.out.println("this.getName():" + this.getName());
@@ -54,7 +54,7 @@ public class Demo6CountOperate extends Thread {
     }
 
     public static void main(String[] args) {
-        Demo6CountOperate operate = new Demo6CountOperate();
+        Demo06CountOperate operate = new Demo06CountOperate();
         Thread t1 = new Thread(operate);
         t1.setName("A");
         t1.start();
